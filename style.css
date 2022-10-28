@@ -135,6 +135,13 @@ input[type=number] {
   color: white !important;
 }
 
+span.error {
+  color: yellow !important;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+}
+
 
 .btn-warning {
     --bs-btn-color: #000;

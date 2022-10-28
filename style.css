@@ -3,6 +3,8 @@ html,
 body {
   font-family: 'Anek Malayalam', sans-serif;
   margin: 0; 
+      background-color: #428603;
+      color: white;
 }
 
 .save-dikers-btn {

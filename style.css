@@ -40,9 +40,9 @@ input[type=number] {
 .total-dikers-view h6 {
   font-size: 13px;
 }
-.old-dikers-view h6 {
+.old-dikers-view, .old-dikers-view h6 {
   font-size: 12px;
-  color: white;
+  color: #c4fd34;
 }
 
 .your-total-dikers-view {
@@ -152,3 +152,6 @@ input[type=number] {
     --bs-btn-disabled-bg: #ffc107;
     --bs-btn-disabled-border-color: 
     }
+   .btn-warning:hover {
+    background-color: #f7d365;
+  }

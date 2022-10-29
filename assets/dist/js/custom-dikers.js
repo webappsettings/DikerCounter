@@ -142,6 +142,7 @@ var dikersAddFormValidator = $("#dikersAddForm").validate({
           dikersInput: {
             required: true,
             number: true,
+            maxlength: 6
           },
       },
       messages: {
@@ -155,6 +156,7 @@ var dikersAddFormValidator = $("#dikersAddForm").validate({
           dikersInput: {
               required: "നിങ്ങള്‍ ചൊല്ലിയ ദിക്റുകളുടെ എണ്ണം ചേര്‍ക്കുക",
               number: "നിങ്ങള്‍ ചൊല്ലിയ ദിക്റുകളുടെ എണ്ണം ചേര്‍ക്കുക",
+              maxlength: "നിങ്ങള്‍ കൊടുത്തിരിക്കുന്ന ദിക്റുകളുടെ എണ്ണം ശരിയല്ല. ദയവായി ശരിയാക്കൂ"
           },
           
       },

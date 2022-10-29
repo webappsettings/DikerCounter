@@ -138,6 +138,7 @@ var dikersAddFormValidator = $("#dikersAddForm").validate({
           phoneInput: {
             required: true,
             number: true,
+            minlength: 10
           },
           dikersInput: {
             required: true,
@@ -152,6 +153,7 @@ var dikersAddFormValidator = $("#dikersAddForm").validate({
           phoneInput: {
               required: "നിങ്ങളുടെ ഫോണ്‍ നമ്പര്‍ ചേര്‍ക്കുക",
               number: "നിങ്ങളുടെ ഫോണ്‍ നമ്പര്‍ ചേര്‍ക്കുക",
+              minlength: "നിങ്ങള്‍ കൊടുത്തിരിക്കുന്ന ഫോണ്‍ നമ്പര്‍ ശരിയല്ല. ദയവായി ശരിയാക്കൂ",
           },
           dikersInput: {
               required: "നിങ്ങള്‍ ചൊല്ലിയ ദിക്റുകളുടെ എണ്ണം ചേര്‍ക്കുക",
@@ -289,6 +291,11 @@ $('#save-dikers-btn').on('click', function() {
            .always(function(){
               $('.loader-bg').fadeOut();
             });
+    } else {
+      if($('#phoneInput').hasClass('error')){
+        $('.person-detail-view').slideDown();
+        $('#phoneInput.error').focus();
+      }
     }
 });
 
